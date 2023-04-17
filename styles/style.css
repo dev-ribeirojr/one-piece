@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Pirata+One&family=Tilt+Prism&display=swap');
-
-
 :root {
     --titulo: 'Tilt Prism', cursive;
     --subtitulo: 'Pirata One', cursive;
@@ -25,20 +23,18 @@ body {
 .headerContainer {
     width: 100%;
     background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: fixed;
     top: 0px;
     z-index: 99;
 }
 
 .header {
+    margin: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    justify-content: center;
 }
 
 .imgHeader {
@@ -55,26 +51,28 @@ body {
 }
 
 .areaNav {
-    display: none;
     width: 100%;
+    display: none;
     text-align: center;
 }
-
-.lista {
-    width: 100%;
+.lista{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
 }
-
 .lista li {
     background-color: #383232ee;
     cursor: pointer;
-    padding: 8px;
-    width: 100%;
     margin-bottom: 3px;
     list-style-type: none;
+    border-radius: 5px;
 }
 
 .lista li a {
-    text-decoration: none;
+    text-decoration: none;  
+}
+.link{
     font-family: var(--font-padrao);
     color: #FFF;
     padding: 8px;
@@ -135,34 +133,39 @@ main {
     margin-bottom: 20px;
     border-radius: 5px;
 }
+.containerImg{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .imgCapa {
+    width: 100%;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px #00000054;
 }
 
 .botaoAssistir {
-    font-family: var(--font-padrao);
     color: #FFF;
-    background-color: var(--cor-0);
-    width: 100px;
-    text-align: center;
-    padding: 8px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    margin-top: -50px;
-    margin-bottom: 20px;
-    align-self: flex-end;
-    text-decoration: none;
     font-size: 20px;
     font-weight: bold;
+    font-family: var(--font-padrao);
+    width: 120px;
+    background-color: #ff2d2d;
+    text-align: center;
+    padding: 8px;
+    align-self: flex-end;
+    margin-top: -50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 50px;
 }
 
-.resumos p {
+.resumoTexto p{
     font-family: var(--font-padrao);
-    text-indent: 10px;
     text-align: justify;
-    margin-top: 15px;
+    text-indent: 10px;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -180,7 +183,8 @@ footer img {
 }
 
 footer a {
-    color: #FFF;
+    padding: 5px;
+    border-radius: 5px;
     text-decoration: none;
     display: flex;
     flex-direction: row;
@@ -188,7 +192,9 @@ footer a {
     align-items: center;
     gap: 10px;
 }
-
+footer a p{
+    color: #FFF;
+}
 footer a i {
     font-size: 30px;
     color: var(--cor-1);

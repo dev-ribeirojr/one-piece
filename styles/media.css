@@ -1,5 +1,6 @@
 :root {
     --cor-0: #c72020;
+    --cor-1 : #61c6f9;
 }
 
 @media screen and (min-width: 768px) {
@@ -19,27 +20,28 @@
 
     .areaNav {
         display: block;
+        max-width: 300px;
     }
 
     .lista {
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
 
     .lista li {
         background-color: transparent;
-
     }
 
     .areaHeader {
-        margin-top: 80px;
+        margin-top: 90px;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .lista li a:hover {
-        color: var(--cor-0);
-        transition: all 0.3s;
+    .lista li:hover {
+        background-color: #383232ee;
+         transition: all 0.3s;
     }
 
     .botaoAssistir:hover {
@@ -48,6 +50,6 @@
     }
 
     footer a:hover {
-        color: rgb(129, 129, 236);
+        background-color: #383232ee;
     }
 }
