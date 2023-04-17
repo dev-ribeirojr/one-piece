@@ -1,0 +1,53 @@
+:root {
+    --cor-0: #c72020;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .header {
+        flex-direction: row;
+        max-width: 1080px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .areaNav {
+        display: block;
+    }
+
+    .lista {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .lista li {
+        background-color: transparent;
+
+    }
+
+    .areaHeader {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .lista li a:hover {
+        color: var(--cor-0);
+        transition: all 0.3s;
+    }
+
+    .botaoAssistir:hover {
+        background-color: var(--cor-0);
+        transition: all 0.3s;
+    }
+
+    footer a:hover {
+        color: rgb(129, 129, 236);
+    }
+}
