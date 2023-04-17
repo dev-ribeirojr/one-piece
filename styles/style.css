@@ -65,9 +65,11 @@ body {
 }
 
 .lista li {
-    margin-bottom: 3px;
     background-color: #383232ee;
+    cursor: pointer;
     padding: 8px;
+    width: 100%;
+    margin-bottom: 3px;
     list-style-type: none;
 }
 
@@ -75,7 +77,7 @@ body {
     text-decoration: none;
     font-family: var(--font-padrao);
     color: #FFF;
-
+    padding: 8px;
 }
 
 #menu {
